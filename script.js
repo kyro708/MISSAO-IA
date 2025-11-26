@@ -62,5 +62,11 @@ function mostraResultado(){
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
 }
+ 
+function aleatorio(lista){
+     const posicao=Math.floor(Math.random()* lista.legth);
+     return lista[posicao];
+
+}
 
 mostraPergunta();
